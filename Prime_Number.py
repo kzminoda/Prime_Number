@@ -4,7 +4,7 @@ import math
 
 class PN_Pickup():
     def __init__(self):
-        self.Data = './prime_number_list.txt'
+        self.Data = './Prime_Number_List.txt'
         with open(self.Data) as fh:
             self.PN = [s.strip() for s in fh.readlines()]
             if self.PN[-1] == "":
